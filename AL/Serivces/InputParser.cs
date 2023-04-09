@@ -37,8 +37,11 @@ namespace AL.Serivces
             var type = Assembly.GetAssembly(typeof(SampleModel))?
                 .GetType("AL.Features." + typeName + "Features");
 
-            IFeatures service = (IFeatures)Activator.CreateInstance(type);
-            service?.Main();
+            if (type != null) 
+            {
+                IFeatures service = (IFeatures)Activator.CreateInstance(type);
+                service?.Main();
+            }
         }
     }
 }
