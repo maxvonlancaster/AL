@@ -1,5 +1,5 @@
-﻿using AL.Serivces;
-using AL.Serivces.Interfaces;
+﻿using AL.Services;
+using AL.Services.Interfaces;
 using Autofac;
 
 namespace AL

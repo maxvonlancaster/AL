@@ -1,9 +1,9 @@
 ﻿using AL.Features.Interfaces;
 using AL.Models;
-using AL.Serivces.Interfaces;
+using AL.Services.Interfaces;
 using System.Reflection;
 
-namespace AL.Serivces
+namespace AL.Services
 {
     public class InputParser : IInputParser
     {

@@ -1,4 +1,4 @@
-﻿namespace AL.Serivces.Interfaces
+﻿namespace AL.Services.Interfaces
 {
     public interface IInputParser
     {
