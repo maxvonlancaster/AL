@@ -2,6 +2,7 @@
 using NAudio.MediaFoundation;
 using Sharer;
 using System.IO.Ports;
+using Telegram.Bot.Types;
 
 namespace AL.Services
 {
@@ -40,6 +41,17 @@ namespace AL.Services
             {
                 _serialPort.Write(message);
             }
+        }
+
+        public string ReadExisting() 
+        {
+            var message = "";
+            if (_serialPort != null)
+            {
+                message = _serialPort.ReadExisting();
+                Console.WriteLine(message);
+            }
+            return message;
         }
 
         private void InnitConnect()
