@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D9358D02-C90F-47D1-B6BE-39FFF400F355}"
 	ProjectSection(SolutionItems) = preProject
 		arduino\analog_read.ino\analog_read.ino.ino = arduino\analog_read.ino\analog_read.ino.ino
+		arduino\arduino_read_write.ino\arduino_read_write.ino.ino = arduino\arduino_read_write.ino\arduino_read_write.ino.ino
 	EndProjectSection
 EndProject
 Global
