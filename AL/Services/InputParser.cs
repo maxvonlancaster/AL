@@ -7,6 +7,13 @@ namespace AL.Services
 {
     public class InputParser : IInputParser
     {
+        private IArduinoService _arduinoService;
+
+        public InputParser(IArduinoService arduinoService)
+        {
+            _arduinoService = arduinoService;
+        }
+
         public void Parse(string? input) 
         {
             if (String.IsNullOrEmpty(input)) 
@@ -20,6 +27,10 @@ namespace AL.Services
             if (input?.Split(" ")[0].ToLower() == "features") 
             {
                 ParseFeatures(input);
+            }
+            if (input?.Split(" ")[0].ToLower() == "arduino")
+            {
+                _arduinoService.Write(input?.Split(" ")[1]!);
             }
         }
 

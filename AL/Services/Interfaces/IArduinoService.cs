@@ -3,6 +3,6 @@
     public interface IArduinoService
     {
         string ReadExisting();
-        void Write(string message, string? ledPin);
+        void Write(string message, string? ledPin = null);
     }
 }

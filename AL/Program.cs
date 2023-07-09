@@ -2,8 +2,8 @@
 using AL;
 using AL.Services;
 
-var service = new ArduinoService();
-service.Main();
+//var service = new ArduinoService();
+//service.Main();
 
 var runner = new Runner();
 runner.Main();

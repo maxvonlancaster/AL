@@ -12,26 +12,15 @@ namespace AL.Services
 
         private SerialPort? _serialPort;
 
+        public ArduinoService()
+        {
+            ConnectViaPort();
+        }
+
         public void Main()
         {
             ConnectViaPort();
-            Demo();
-        }
-
-        private void Demo()
-        {
-            Write("1");
-            Thread.Sleep(2000);
-            Write("0");
-            Thread.Sleep(2000);
-            Write("1");
-            Thread.Sleep(2000);
-            Write("0");
-            Thread.Sleep(2000);
-            Write("1");
-            Thread.Sleep(2000);
-            Write("0");
-            Thread.Sleep(2000);
+            //Demo();
         }
 
         // ledPin is by default 13
