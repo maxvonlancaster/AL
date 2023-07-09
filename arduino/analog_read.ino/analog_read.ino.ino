@@ -7,6 +7,6 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   int sensorValue = analogRead(A0);
-  Serial.println(sensorValue);
+  Serial.println(sensorValue); // Analog output of potentiometer;
   delay(1);
 }
