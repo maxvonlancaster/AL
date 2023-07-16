@@ -1,13 +1,8 @@
-﻿using AL.Services.Interfaces;
-using NAudio.MediaFoundation;
-using Sharer;
-using Telegram.Bot.Types;
-using System.IO.Ports;
+﻿using System.IO.Ports;
 
-
-namespace AL.Services
+namespace ArduinoDotNetHelper
 {
-    public class ArduinoService : IArduinoService
+    public class ArduinoService 
     {
         private SerialPort? _serialPort;
 
@@ -17,15 +12,15 @@ namespace AL.Services
         }
 
         // ledPin is by default 13
-        public void Write(string message, string? ledPin = null) 
+        public void Write(string message, string? ledPin = null)
         {
-            if (_serialPort != null) 
+            if (_serialPort != null)
             {
                 _serialPort.Write(message);
             }
         }
 
-        public string ReadExisting() 
+        public string ReadExisting()
         {
             var message = "";
             if (_serialPort != null)
@@ -36,7 +31,7 @@ namespace AL.Services
             return message;
         }
 
-        private void ConnectViaPort() 
+        private void ConnectViaPort()
         {
             _serialPort = new SerialPort();
             _serialPort.PortName = "COM3";

@@ -39,7 +39,7 @@ namespace AL
                 .As<IInputParser>()
                 .InstancePerLifetimeScope();
             builder
-                .RegisterType<ArduinoService>()
+                .RegisterType<InoService>()
                 .As<IArduinoService>()
                 .InstancePerLifetimeScope();
         }

@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		arduino\arduino_read_write.ino\arduino_read_write.ino.ino = arduino\arduino_read_write.ino\arduino_read_write.ino.ino
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArduinoDotNetHelper", "ArduinoDotNetHelper\ArduinoDotNetHelper.csproj", "{6C25B1CC-7F4E-4C73-A4E7-16FD3FED9BE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatGPTDotNetHelper", "ChatGPTDotNetHelper\ChatGPTDotNetHelper.csproj", "{4ADA43D7-D2BC-4325-B2A8-01F54D77BF1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{53ABF9C3-501C-4987-B01F-C92D2E5A3388}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53ABF9C3-501C-4987-B01F-C92D2E5A3388}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53ABF9C3-501C-4987-B01F-C92D2E5A3388}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C25B1CC-7F4E-4C73-A4E7-16FD3FED9BE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C25B1CC-7F4E-4C73-A4E7-16FD3FED9BE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C25B1CC-7F4E-4C73-A4E7-16FD3FED9BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C25B1CC-7F4E-4C73-A4E7-16FD3FED9BE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ADA43D7-D2BC-4325-B2A8-01F54D77BF1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ADA43D7-D2BC-4325-B2A8-01F54D77BF1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ADA43D7-D2BC-4325-B2A8-01F54D77BF1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ADA43D7-D2BC-4325-B2A8-01F54D77BF1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
