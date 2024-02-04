@@ -5,5 +5,5 @@ using AL.Services;
 //var service = new ArduinoService();
 //service.Main();
 
-var runner = new Runner();
-runner.Main();
+//var runner = new Solution();
+SolutionsSecond.Main(new string[] { } );
